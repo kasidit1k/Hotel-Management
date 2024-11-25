@@ -1,0 +1,77 @@
+
+:root{
+    --teal: #2ec1ac;
+    --teal_hover: #279eBc;
+}
+
+* {
+    font-family: "JetBrains Mono", serif;
+}
+
+.h-font {
+    font-family: "Poppins", serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.main-content {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; /* ทำให้ footer อยู่ด้านล่างสุด */
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    /* สำหรับ Chrome, Safari */
+    appearance: none;
+    /* รองรับทั่วไป */
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    /* สำหรับ Firefox */
+    appearance: textfield;
+    /* รองรับทั่วไป */
+}
+
+
+.custom-bg{
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
+}
+
+.custom-bg:hover{
+    background-color: var(--teal_hover);
+    border-color: var(--teal_hover);
+}
+
+.availability-form{
+    margin-top: -50px;
+    z-index: 2;
+    position: relative;
+}
+@media screen and (max-width: 575px) {
+    .availability-form{
+        margin-top: 25px;
+        padding: 0 35px;
+    }
+    
+}
+
+.h-line{
+    width: 150px;
+    margin: 0 auto;
+    height: 1.7px;
+}
+
+
